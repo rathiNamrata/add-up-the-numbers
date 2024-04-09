@@ -7,6 +7,10 @@
  * @returns {number} Quarter of the year.
  */
 
-export const quarterOfTheYear = (month) => {
-    return Math.ceil(month / 3);
+// export const quarterOfTheYear = (month) => {
+//     return Math.ceil(month / 3);
+// };
+function addUp(num) {
+    if (num === 1) return 1;
+    return num + addUp(num - 1);
 };
